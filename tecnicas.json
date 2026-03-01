@@ -182,5 +182,23 @@
       "Pakkat",
       "Yop"
     ]
+  },
+    {
+    "resposta": [
+      "Dwit",
+      "Bal",
+      "Pyojeok",
+      "Chagui"
+    ],
+    "imagem": "https://i.pinimg.com/1200x/e8/5e/54/e85e549e7868cca8fe21e4801b089ac4.jpg",
+    "erradas": [
+      "Ap",
+      "Sonnal",
+      "Pitro",
+      "Tok",
+      "Yop",
+      "Jirugui",
+      "Dubal"
+    ]
   }
 ]
