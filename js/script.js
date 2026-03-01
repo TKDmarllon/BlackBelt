@@ -308,7 +308,7 @@ function cadastrarTecnica() {
         return;
     }
 
-    tecnicas.push({ imagem, resposta, erradas });
+    tecnicas.push({ resposta, imagem, erradas });
     salvarStorage();
 
     document.getElementById("imagemInput").value = "";
