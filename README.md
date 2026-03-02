@@ -1,115 +1,140 @@
-# 🥋 Quiz Black Belt
+# 🥋 Black Belt – Sistema de Estudo para Taekwondo
 
-Sistema web interativo para auxiliar no aprendizado de técnicas e Poomsae de Taekwondo.
+Sistema web interativo desenvolvido para auxiliar alunos da Equipe Black Belt no estudo técnico, teórico e prático do Taekwondo.
 
-Desenvolvido para uso em aula, com foco em memorização dos nomes técnicos e apoio visual através de vídeos.
+Projeto desenvolvido com foco em:
 
----
-
-## 📌 Funcionalidades
-
-### 📋 Cadastro de Técnicas
-
-- Cadastro de técnica com:
-  - Link da imagem
-  - Nome correto (separado por palavras)
-  - Opções de nomes errados
-- Armazenamento local usando `localStorage`
-- Listagem das técnicas cadastradas
-- Exclusão individual de técnicas
-- Ocultar / Mostrar lista de técnicas
+- 📱 Mobile First
+- 💾 Armazenamento local (localStorage)
+- 🎯 Aprendizado gamificado
+- 🥋 Organização por faixa (GUB)
 
 ---
 
-### 🎮 Sistema de Quiz
+# 📑 Estrutura do Sistema (Organizado por Abas)
 
-- Exibição da imagem da técnica
-- Palavras embaralhadas
-- Montagem do nome correto pelo usuário
+---
+
+## 🎮 Aba: Jogo
+
+Sistema principal de quiz visual.
+
+### Funcionamento:
+
+- Exibe imagem da técnica
+- Mostra palavras embaralhadas
+- Usuário monta o nome correto
 - Botões:
-  - ✅ Verificar
-  - ⬅️ Apagar última palavra
-  - ⏭️ Pular técnica
-- Feedback visual centralizado (overlay):
-  - ✅ Correto
-  - ❌ Errado
-- Avança automaticamente ao acertar
-- Técnicas exibidas em ordem aleatória
+  - ✅ Verificar resposta
+  - 🔙 Apagar última palavra
+  - ⏭ Pular técnica
+- Feedback visual:
+  - Verde = correto
+  - Vermelho = errado
+- Técnicas são embaralhadas automaticamente
 
 ---
 
-### 📺 Aba de Poomsae
+## 🥋 Aba: Poomsae
 
-Integração com vídeo do YouTube contendo todos os Taegeuk.
+Área dedicada ao estudo das formas.
 
-Cada faixa redireciona para a minutagem correta:
+### Funcionalidades:
 
-- 🟡 Faixa Amarela – Taegeuk 1 Jang
-- 🟡🟢 Faixa Amarela Ponta Verde – Taegeuk 2 Jang
-- 🟢 Faixa Verde – Taegeuk 3 Jang
-- 🟢🔵 Faixa Verde Ponta Azul – Taegeuk 4 Jang
-- 🔵 Faixa Azul – Taegeuk 5 Jang
-- 🔵🔴 Faixa Azul Ponta Vermelha – Taegeuk 6 Jang
-- 🔴 Faixa Vermelha – Taegeuk 7 Jang
-- 🔴⚫ Faixa Vermelha Ponta Preta – Taegeuk 8 Jang
-
-Abertura automática na minutagem correta do vídeo.
+- Lista de poomsae por faixa
+- Redirecionamento para vídeos no YouTube
+- Abertura com minutagem específica
+- Não utiliza iframe (evita erro 153)
+- Funciona via link direto
 
 ---
 
-### ⚙️ Administração
+## 📖 Aba: Apostila Black Belt
 
-- 📤 Exportar técnicas (arquivo JSON)
-- 📥 Importar técnicas (arquivo JSON)
-- 🔄 Resetar banco de dados (limpa `localStorage`)
+Área teórica organizada por faixa (GUB).
 
----
+### Estrutura:
 
-## 📱 Interface Mobile First
+- Botões por faixa:
+  - 10º ao 1º GUB
+- Sistema tipo sanfona (accordion)
+- Exibição individual de conteúdo
 
-O sistema foi desenvolvido com foco em uso pelo celular.
+### Conteúdo por faixa:
 
-Possui:
+- Kibon Dong Jak
+- Bal Ki Sul
+- Poomsae (apenas nome)
+- Matcho Kyorugui (texto)
+- Iron (mini quiz interativo)
+- Diga o significado (múltipla escolha com correção automática)
+- Kyorugui (texto)
+- Kyok Pa (texto)
 
-- Menu inferior fixo (estilo aplicativo)
-- Navegação por abas:
-  - Cadastro
-  - Jogo
-  - Poomsae
-  - Administração
-- Layout moderno com degradê e cards
-- Botões responsivos
-- Transições suaves
+### Recursos interativos:
 
----
-
-## 💾 Armazenamento de Dados
-
-O sistema utiliza:
-
-- `localStorage` para salvar técnicas localmente
-- Arquivo `tecnicas.json` como banco inicial
-- Importação/exportação manual para backup
-
-Não utiliza banco de dados externo.
+- Botão "Mostrar resposta" no Iron
+- Select com validação:
+  - Verde quando acerta
+  - Vermelho quando erra
 
 ---
 
-## 🛠 Tecnologias Utilizadas
+## ⚙️ Aba: Administração
 
-- HTML5
-- CSS3
-- JavaScript (Vanilla JS)
-- Integração com YouTube (redirecionamento por minutagem)
-- Hospedagem estática (Netlify ou GitHub Pages)
+Controle do banco local de técnicas.
+
+### Funcionalidades:
+
+- 📤 Exportar técnicas (gera arquivo `.json`)
+- 📥 Importar técnicas (`.json`)
+- ♻ Resetar banco (limpa `localStorage`)
+- Controle total sem backend
+
+- Cadastro
+
+Permite cadastrar novas técnicas manualmente.
+
+### Funcionalidades:
+
+- Inserir:
+  - Nome correto da técnica
+  - Link da imagem
+  - Alternativas erradas
+- Salvar no `localStorage`
+- Listar técnicas cadastradas
+- Excluir técnicas individualmente
+- Mostrar / ocultar lista
+- Sistema de persistência local
 
 ---
 
-## 🎯 Objetivo do Projeto
+# 💾 Armazenamento de Dados
 
-Auxiliar alunos de Taekwondo na:
+- Utiliza `localStorage`
+- Pode importar/exportar JSON
+- Não utiliza banco externo
+- Funciona 100% offline após carregado
 
-- Memorização dos nomes técnicos
-- Associação visual da técnica com o nome correto
-- Estudo dos Poomsae por faixa
-- Reforço do aprendizado fora da aula
+---
+
+# 📱 Design
+
+- Layout Mobile First
+- Navegação tipo aplicativo
+- Sistema de troca de telas via JavaScript
+- Scroll automático ao trocar de aba
+- Interface limpa e focada em celular
+
+---
+
+# 🛠 Tecnologias Utilizadas
+
+- HTML5  
+- CSS3  
+- JavaScript (Vanilla JS)  
+- GitHub Pages (hospedagem estática)
+
+---
+
+# 📂 Estrutura do Projeto
