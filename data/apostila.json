@@ -1,0 +1,531 @@
+[
+  {"id": "gub10",
+    "faixa": "Branca",
+    "titulo": "10º GUB",
+    "conteudo": {
+      "kibon_dong_jak": {
+        "titulo": "Kibon Dong Jak (Posições básicas de ataque e defesa)",
+        "bases": [
+          { "nome": "Moa Seogui Aré Retchô Makki", "descricao": "Pés juntos, defendendo ao lado do tronco com as mãos fechadas." },
+          { "nome": "Naranhi Seogui Aré Retchô Makki", "descricao": "Pés paralelos e afastados na largura dos ombros, defendendo ao lado do tronco com mãos fechadas." },
+          { "nome": "Pyonri Seogui Aré Retchô Makki", "descricao": "Pés afastados na largura dos ombros e virados 45º para fora, defendendo ao lado do tronco com mãos fechadas." },
+          { "nome": "Jutchum Seogui Aré Retchô Makki", "descricao": "Pés afastados com os dois joelhos flexionados, defendendo ao lado do tronco com mãos fechadas." },
+          { "nome": "Ap Kubi Seogui Aré Retchô Makki", "descricao": "Avançando o pé na largura de dois passos com o joelho da frente flexionado, defendendo ao lado do tronco com mãos fechadas." }
+        ],
+        "ataques": [
+          { "nome": "Jutchum so Dubon Jirugui", "descricao": "Pés afastados com joelhos flexionados, desfere dois socos no plexo." },
+          { "nome": "Ap Kubi Momtong Jirugui", "descricao": "Soco no plexo." },
+          { "nome": "Ap Kubi Olgul Jirugui", "descricao": "Soco na altura do rosto." }
+        ],
+        "defesas": [
+          { "nome": "Ap Kubi Momtong Makki", "descricao": "Defesa com antebraço na altura do tronco (de fora para dentro)." },
+          { "nome": "Ap Kubi Arae Makki", "descricao": "Defesa com mão fechada embaixo." },
+          { "nome": "Ap Kubi Olgul Makki", "descricao": "Defesa com mão fechada em cima." },
+          { "nome": "Ap Kubi Hansonnal Momtong Pakkat Makki", "descricao": "Defesa com mão aberta na altura do tronco." },
+          { "nome": "Ap Kubi Hansonnal Arae Makki", "descricao": "Defesa com mão aberta embaixo." },
+          { "nome": "Ap Kubi Hansonnal Olgul Makki", "descricao": "Defesa com mão aberta em cima." }
+        ]
+      },
+      "bal_ki_sul": {
+        "titulo": "Bal Ki Sul (Técnicas de Chute)",
+        "preparacao": "Recuar pé direito em Ap Kubi Aré Retchô Makki",
+        "tecnicas": [
+          { "nome": "Ap Tcha Oligui", "descricao": "Elevação de perna com joelho estendido." },
+          { "nome": "Ap Chagui", "descricao": "Chute frontal com a bola do pé (metatarsos)." },
+          { "nome": "Pakkat Chagui", "descricao": "Chute circular para fora." },
+          { "nome": "An Chagui", "descricao": "Chute circular para dentro." },
+          { "nome": "Bandal Chagui", "descricao": "Chute em diagonal com o peito do pé." },
+          { "nome": "Dollyo Chagui", "descricao": "Chute semicircular." },
+          { "nome": "Yop Chagui", "descricao": "Chute lateral com a faca do pé." }
+        ]
+      },
+      "poomsae": {
+        "titulo": "Poomsae / Saju",
+        "itens": [
+          { "nome": "Saju Jirugui", "descricao": "Socando em quatro direções." },
+          { "nome": "Saju Ap Chagui", "descricao": "Chutando nas quatro direções." }
+        ]
+      },
+      "iron": {
+        "titulo": "Iron (Conhecimentos)",
+        "perguntas_respostas": [
+          { "pergunta": "O que significa a palavra Tae Kwon Do?", "resposta": "Significa literalmente 'O Caminho (ou Arte) dos Pés e das Mãos'." },
+          { "pergunta": "Onde nasceu o Tae Kwon Do?", "resposta": "Na Coréia, no antigo Reino de Shillá." },
+          { "pergunta": "Qual é o nome e graduação do Mestre?", "resposta": "Rafael Sant’Ana, Faixa Preta 6º Dan." },
+          { "pergunta": "Como se conta de 1 a 5 em Coreano?", "resposta": "1-Haná, 2-Dul, 3-Set, 4-Net e 5-Dassot." }
+        ],
+        "quiz_significados": [
+          { "termo": "Tchariot", "opcoes": ["Sentido", "Preparar", "Descansar", "Saudação", "Debandar"], "resposta": "Sentido" },
+          { "termo": "Kian-lhe / Kiuniê", "opcoes": ["Sentido", "Cumprimentar, Saudação", "Preparar", "Descansar", "Debandar"], "resposta": "Cumprimentar, Saudação" },
+          { "termo": "Tchumbi", "opcoes": ["Sentido", "Saudação", "Preparar", "Descansar", "Debandar"], "resposta": "Preparar" },
+          { "termo": "Chiô", "opcoes": ["Sentido", "Preparar", "Descansar", "Saudação", "Debandar"], "resposta": "Descansar" },
+          { "termo": "Kuki Derraio Kian-lhe", "opcoes": ["Sentido", "Cumprimento as Bandeiras", "Preparar", "Saudação", "Debandar"], "resposta": "Cumprimento as Bandeiras" },
+          { "termo": "Retchô", "opcoes": ["Sentido", "Preparar", "Descansar", "Saudação", "Debandar, dispersar"], "resposta": "Debandar, dispersar" }
+        ]
+      }
+    }
+  },
+  {"id": "gub8",
+    "faixa": "Amarela",
+    "titulo": "8º GUB",
+    "tempo_minimo": "4 meses",
+    "conteudo": {
+      "kibon_dong_jak": {
+        "titulo": "Kibon Dong Jak (Posições básicas de ataque e defesa)",
+        "tecnicas": [
+          { "nome": "Ap Seogui Momtong Barô Jirugui", "descricao": "Avançando o pé na largura de um passo, soco no meio com a mão oposta ao pé da frente." },
+          { "nome": "Ap Seogui Momtong An Makki", "descricao": "Avançando o pé na largura de um passo, defesa com antebraço na altura do tronco de fora para dentro, com o braço oposto ao pé da frente." },
+          { "nome": "Ap Seogui Momtong Retchio Makki", "descricao": "Avançando o pé na largura de um passo, defesa simultânea com antebraços no meio de dentro para fora." },
+          { "nome": "Ap Seogui Pion Sonkkeut Sewo Tzireugi", "descricao": "Avançando o pé na largura de um passo, mãos abertas: uma defende com a palma e a outra ataca com a ponta dos dedos." }
+        ]
+      },
+      "bal_ki_sul": {
+        "titulo": "Bal Ki Sul (Técnicas de Chutes)",
+        "preparacao": "Kyorugui Jumbi (posição de luta recuando o pé direito)",
+        "tecnicas": [
+          { "nome": "Ap Bal Miro Chagui", "descricao": "Com a perna da frente, chute para frente batendo com o calcanhar." },
+          { "nome": "Dwit Bal Neryo Chagui", "descricao": "Com a perna de trás, chute descendente com o calcanhar." },
+          { "nome": "Ap Bal Twio Ap Chagui", "descricao": "Com a perna da frente, chute frontal saltando." },
+          { "nome": "Dwit Bal Furyô Chagui", "descricao": "Com a perna de trás, chute em gancho com o calcanhar." }
+        ]
+      },
+      "poomsae": {
+        "titulo": "Poomsae",
+        "itens": [
+          { "nome": "Taegeuk Il Jang", "descricao": "Execução do primeiro poomsae da sequência Taegeuk." }
+        ]
+      },
+      "matcho_kyorugui": {
+        "titulo": "Matcho Kyorugui (Sebon Kyorugui)",
+        "descricao": "Números 1 a 5."
+      },
+      "iron": {
+        "titulo": "Iron (Conhecimentos)",
+        "perguntas_respostas": [
+          { "pergunta": "Qual é o Espírito do Tae Kwon Do?", "resposta": "Cortesia, Integridade, Perseverança, Autocontrole e Espírito Indomável." },
+          { "pergunta": "Como se conta de 1 a 10 em Coreano?", "resposta": "1-Haná, 2-Dul, 3-Set, 4-Net, 5-Dassot, 6-Iessôt, 7-Ilgôb, 8-Iodol, 9-Arrôp, 10-Iol." },
+          { "pergunta": "Qual é o Juramento do Taekwondo?", "resposta": "Eu juro (prometo) observar as regras do Taekwondo, respeitar o instrutor e meus superiores, nunca fazer mau uso do Taekwondo, construir um mundo mais pacífico e ser campeão da liberdade e justiça." }
+        ],
+        "quiz_significados": [
+          { "termo": "Kwan Won", "opcoes": ["Aluno", "Assistente de Instrutor", "Instrutor", "Mestre", "Grão Mestre"], "resposta": "Aluno" },
+          { "termo": "Jokyonim", "opcoes": ["Aluno", "Assistente de Instrutor (Faixa vermelha ponta preta)", "Instrutor", "Mestre", "Grão Mestre"], "resposta": "Assistente de Instrutor (Faixa vermelha ponta preta)" },
+          { "termo": "Kyosanim", "opcoes": ["Aluno", "Assistente de Instrutor", "Instrutor (Faixa Preta de 1º até 3º Dan)", "Mestre", "Grão Mestre"], "resposta": "Instrutor (Faixa Preta de 1º até 3º Dan)" },
+          { "termo": "Sabunim", "opcoes": ["Aluno", "Assistente de Instrutor", "Instrutor", "Mestre (Faixa Preta de 4º até 6º Dan)", "Grão Mestre"], "resposta": "Mestre (Faixa Preta de 4º até 6º Dan)" },
+          { "termo": "Kwanjanim", "opcoes": ["Aluno", "Assistente de Instrutor", "Instrutor", "Mestre", "Grão Mestre (Faixa Preta de 7º Dan em diante)"], "resposta": "Grão Mestre (Faixa Preta de 7º Dan em diante)" },
+          { "termo": "Ap", "opcoes": ["Frente", "Trás"], "resposta": "Frente" },
+          { "termo": "Dwit", "opcoes": ["Frente", "Trás"], "resposta": "Trás" }
+        ]
+      },
+      "kyorugui": { "titulo": "Kyorugui (Luta)", "descricao": "1 luta." }
+    }
+  },
+  {"id": "gub7",
+    "faixa": "Amarela com Ponta Verde",
+    "titulo": "7º GUB",
+    "tempo_minimo": "4 meses",
+    "conteudo": {
+      "kibon_dong_jak": {
+        "titulo": "Kibon Dong Jak (Posições básicas de ataque e defesa)",
+        "tecnicas": [
+          { "nome": "Dwit Kubi Momtong Pakkat Makki", "descricao": "Base em “L”, defesa no meio com o antebraço de dentro para fora com a mão fechada, com as costas da mão voltadas para o rosto." },
+          { "nome": "Dwit Kubi Hansonnal Momtong Pakkat Makki", "descricao": "Base em “L”, defesa com mão aberta na altura do tronco (meio)." },
+          { "nome": "Dwit Kubi Kodureo Momtong Pakkat Makki", "descricao": "Base em “L”, defesa de dentro para fora com apoio da mão que está atrás." },
+          { "nome": "Dwit Kubi Sonnal Arae Makki", "descricao": "Base em “L”, defende com as duas mãos abertas no meio e em baixo." }
+        ]
+      },
+      "bal_ki_sul": {
+        "titulo": "Bal Ki Sul (Técnicas de Chutes)",
+        "preparacao": "Kyorugui Jumbi (posição de luta recuando o pé direito)",
+        "tecnicas": [
+          { "nome": "Dwit Bal Tora Yop Chagui", "descricao": "Com a perna de trás, chute giratório para frente com a faca do pé." },
+          { "nome": "Dwit Bal Dubal Chagui", "descricao": "Com o pé de trás, chute bandal duplo saltando." },
+          { "nome": "Ap Bal Redjhon (Dolgue)", "descricao": "Com o pé da frente, chute giratório com o peito do pé." },
+          { "nome": "Ap Bal Twio Bandal Chagui", "descricao": "Com o pé da frente, chute em diagonal com o peito do pé saltando." }
+        ]
+      },
+      "poomsae": {
+        "titulo": "Poomsae",
+        "itens": [
+          { "nome": "Taegeuk IL Jang", "descricao": "Primeiro Poomsae" },
+          { "nome": "Taegeuk Ee Jang", "descricao": "Segundo Poomsae" }
+        ]
+      },
+      "matcho_kyorugui": {
+        "titulo": "Matcho Kyorugui Sebon Kyorugui",
+        "descricao": "Números 6 a 10"
+      },
+      "iron": {
+        "titulo": "Iron (Conhecimentos)",
+        "perguntas_respostas": [
+          { "pergunta": "O que é WT?", "resposta": "É a Federação Mundial de Tae Kwon Do (The World Tae Kwon Do)." },
+          { "pergunta": "O que é CBTKD?", "resposta": "É a Confederação Brasileira de Tae Kwon Do." },
+          { "pergunta": "Quando e quem trouxe o Taekwondo para o Rio de Janeiro?", "resposta": "Em 1972, o Grão-Mestre Woo Jae Lee." }
+        ],
+        "quiz_significados": [
+          { "termo": "Dobok", "opcoes": ["Uniforme de treino", "Academia ou local de treino", "Pé", "Peito do pé", "Faca do pé"], "resposta": "Uniforme de treino" },
+          { "termo": "Dojang", "opcoes": ["Uniforme de treino", "Academia ou local de treino", "Pé", "Peito do pé", "Faca do pé"], "resposta": "Academia ou local de treino" },
+          { "termo": "Bal", "opcoes": ["Uniforme de treino", "Academia ou local de treino", "Pé", "Peito do pé", "Faca do pé"], "resposta": "Pé" },
+          { "termo": "Bal Dung", "opcoes": ["Pé", "Peito do pé", "Faca do pé"], "resposta": "Peito do pé" },
+          { "termo": "Balnal", "opcoes": ["Pé", "Peito do pé", "Faca do pé"], "resposta": "Faca do pé" },
+          { "termo": "Balnal Dung", "opcoes": ["Lado oposto a “Faca do pé” (borda interna do pé)", "Peito do pé", "Pé", "Faca do pé"], "resposta": "Lado oposto a “Faca do pé” (borda interna do pé)" }
+        ]
+      },
+      "kyorugui": { "titulo": "Kyorugui (Luta)", "descricao": "1 Luta" }
+    }
+  },
+  {"id": "gub6",
+    "faixa": "Verde",
+    "titulo": "6º GUB",
+    "tempo_minimo": "6 meses",
+    "conteudo": {
+      "kibon_dong_jak": {
+        "titulo": "Kibon Dong Jak (Posições básicas de ataque e defesa)",
+        "tecnicas": [
+          { "nome": "Ap Seogui Hansonnal Mok Barô Chigui", "descricao": "Avançando o pé a largura de um passo com o joelho da frente flexionado, ataque com a faca da mão na lateral do pescoço." },
+          { "nome": "Ap Kubi Otkoro Arae Makki", "descricao": "Avançando o pé a largura de dois passos com o joelho da frente flexionado, defesa com antebraços cruzados e mãos fechadas embaixo." },
+          { "nome": "Ap Kubi Sonnal Otkoro Olgul Makki", "descricao": "Avançando o pé a largura de dois passos com o joelho da frente flexionado, defesa com antebraços cruzados e mãos abertas em cima." },
+          { "nome": "Ap Kubi Momtong Dubon Jirugui", "descricao": "Avançando o pé a largura de dois passos com o joelho da frente flexionado, dois socos na altura do plexo." }
+        ]
+      },
+      "bal_ki_sul": {
+        "titulo": "Bal Ki Sul (Técnicas de Chutes)",
+        "preparacao": "Kyorugui Jumbi (posição de luta recuando o pé direito)",
+        "tecnicas": [
+          { "nome": "Dwit Bal Twio Yop Chagui", "descricao": "Com a perna de trás, chute lateral saltando." },
+          { "nome": "MonDollyo Chagui", "descricao": "Chute giratório com o calcanhar." },
+          { "nome": "Ap Bal Bandal + Ap Bal Miro Chagui", "descricao": "Com o pé da frente, chute em diagonal com o peito do pé + com o pé da frente, chute para frente batendo com o calcanhar." },
+          { "nome": "Dwit Bal Dollyo + Dwit Bal Tora Yop Chagui", "descricao": "Com o pé de trás, chute semicircular com o peito do pé + com o pé de trás, chute giratório para frente com a faca do pé." }
+        ]
+      },
+      "poomsae": {
+        "titulo": "Poomsae",
+        "itens": [
+          { "nome": "Taegeuk Ee Jang", "descricao": "Segundo Poomsae" },
+          { "nome": "Taegeuk Sam Jang", "descricao": "Terceiro Poomsae" }
+        ]
+      },
+      "matcho_kyorugui": {
+        "titulo": "Matcho Kyorugui Sebon Kyorugui",
+        "itens": [
+          "Três passos – números 11 a 15",
+          "Dubon Kyorugui – números 1 a 4"
+        ]
+      },
+      "iron": {
+        "titulo": "Iron (Conhecimentos)",
+        "perguntas_respostas": [
+          { "pergunta": "Quais são as faixas do Tae Kwon Do?", "resposta": "Branca (10º Gub), Amarela (8º Gub), Amarela com ponta verde (7º Gub), Verde (6º Gub), Verde com ponta azul (5º Gub), Azul (4º Gub), Azul com ponta vermelha (3º Gub), Vermelha (2º Gub), Vermelha com ponta preta (1º Gub) e Preta (1º ao 10º Dan)" },
+          { "pergunta": "Como é a contagem ordinal de 1º a 5º em Coreano?", "resposta": "1º = Il; 2º = Ee; 3º = Sam; 4º = Sa; 5º = Oh" },
+          { "pergunta": "Quais eram os antigos nomes da arte marcial coreana?", "resposta": "Taekkyon e Soobak" }
+        ],
+        "quiz_significados": [
+          { "termo": "Yop", "opcoes": ["Lado", "Dentro", "Fora", "Em cima", "“Sola dos pés”", "Faixa"], "resposta": "Lado" },
+          { "termo": "An", "opcoes": ["Lado", "Dentro", "Fora", "Em cima", "“Sola dos pés”", "Faixa"], "resposta": "Dentro" },
+          { "termo": "Pakkat", "opcoes": ["Lado", "Dentro", "Fora", "Em cima", "“Sola dos pés”", "Faixa"], "resposta": "Fora" },
+          { "termo": "Olgul", "opcoes": ["Lado", "Dentro", "Fora", "Em cima", "“Sola dos pés”", "Faixa"], "resposta": "Em cima" },
+          { "termo": "Balbadak", "opcoes": ["Lado", "Dentro", "Fora", "Em cima", "“Sola dos pés”", "Faixa"], "resposta": "“Sola dos pés”" },
+          { "termo": "Ti", "opcoes": ["Lado", "Dentro", "Fora", "Em cima", "“Sola dos pés”", "Faixa"], "resposta": "Faixa" }
+        ]
+      },
+      "kyorugui": { "titulo": "Kyorugui (Luta)", "descricao": "1 Luta" }
+    }
+  },
+  {"id": "gub5",
+    "faixa": "Verde com Ponta Azul",
+    "titulo": "5º GUB",
+    "tempo_minimo": "6 meses",
+    "conteudo": {
+      "kibon_dong_jak": {
+        "titulo": "Kibon Dong Jak (Posições básicas de ataque e defesa)",
+        "tecnicas": [
+          { "nome": "Ap Kubi Jebipoon Mok Chigui", "descricao": "Avançando o pé a largura de dois passos com o joelho da frente flexionado, defende em cima com a mão aberta e simultaneamente ataca no pescoço com a faca da mão oposta ao pé da frente." },
+          { "nome": "Dwit Kubi Sonnal Momtong Makki", "descricao": "Base em “L”, defende com as duas mãos abertas no meio." },
+          { "nome": "Ap Kubi Momtong Dubon Barô Jirugui", "descricao": "Avançando o pé a largura de dois passos com o joelho da frente flexionado, soco duplo no plexo começando com a mão oposta ao pé da frente." },
+          { "nome": "Ap Kubi Deungjumeok Ap Chigui", "descricao": "Avançando o pé a largura de dois passos com o joelho da frente flexionado, ataque com as costas da mão na boca." }
+        ]
+      },
+      "bal_ki_sul": {
+        "titulo": "Bal Ki Sul (Técnicas de Chutes)",
+        "preparacao": "Kyorugui Jumbi (posição de luta recuando o pé direito)",
+        "tecnicas": [
+          { "nome": "Tora Pakkat Chagui", "descricao": "Chute giratório com a faca do pé." },
+          { "nome": "Dwit Bal Tora Dwit Chagui", "descricao": "Chute giratório por trás com o calcanhar." },
+          { "nome": "Ap Bal Bandal + Ap Bal Naeryo Chagui", "descricao": "Com o pé da frente, chute em diagonal com o peito do pé + chute descendente batendo com o calcanhar." },
+          { "nome": "Dwit Bal Dollyo + Dwit Bal MonDollyo Chagui", "descricao": "Com o pé de trás, chute semicircular com o peito do pé + chute giratório batendo com o calcanhar." }
+        ]
+      },
+      "poomsae": {
+        "titulo": "Poomsae",
+        "itens": [
+          { "nome": "Taegeuk Sam Jang", "descricao": "Terceiro Poomsae" },
+          { "nome": "Taegeuk Sa Jang", "descricao": "Quarto Poomsae" }
+        ]
+      },
+      "matcho_kyorugui": {
+        "titulo": "Matcho Kyorugui",
+        "itens": [
+          "Sebon Kyorugui (três passos) – números 16 a 20",
+          "Dubon Kyorugui – números 5 a 8"
+        ]
+      },
+      "iron": {
+        "titulo": "Iron (Conhecimentos)",
+        "perguntas_respostas": [
+          { "pergunta": "O que é o Tae Kwon Do?", "resposta": "É uma arte marcial coreana que utiliza 70% dos movimentos com os pés e 30% com as mãos para desferir seus golpes, desenvolvendo a pessoa física, mental e espiritualmente." },
+          { "pergunta": "O que é o Kukkiwon?", "resposta": "É o quartel-general do Taekwondo." },
+          { "pergunta": "Quando o Taekwondo se tornou esporte olímpico?", "resposta": "Nas Olimpíadas de 2000, em Sydney." }
+        ],
+        "quiz_significados": [
+          { "termo": "Ap Tchuk", "opcoes": ["Bola do pé", "Calcanhar", "Esquerda", "Direita", "Começar", "Sentar"], "resposta": "Bola do pé" },
+          { "termo": "Dwit Tchuk", "opcoes": ["Bola do pé", "Calcanhar", "Esquerda", "Direita", "Começar", "Sentar"], "resposta": "Calcanhar" },
+          { "termo": "Wen", "opcoes": ["Bola do pé", "Calcanhar", "Esquerda", "Direita", "Começar", "Sentar"], "resposta": "Esquerda" },
+          { "termo": "Orun", "opcoes": ["Bola do pé", "Calcanhar", "Esquerda", "Direita", "Começar", "Sentar"], "resposta": "Direita" },
+          { "termo": "Shidjak", "opcoes": ["Bola do pé", "Calcanhar", "Esquerda", "Direita", "Começar", "Sentar"], "resposta": "Começar" },
+          { "termo": "Anja", "opcoes": ["Bola do pé", "Calcanhar", "Esquerda", "Direita", "Começar", "Sentar"], "resposta": "Sentar" }
+        ]
+      },
+      "kyorugui": { "titulo": "Kyorugui (Luta)", "descricao": "1 Luta" }
+    }
+  },
+  {"id": "gub4",
+    "faixa": "Azul",
+    "titulo": "4º GUB",
+    "tempo_minimo": "8 meses",
+    "conteudo": {
+      "kibon_dong_jak": {
+        "titulo": "Kibon Dong Jak (Posições básicas de ataque e defesa)",
+        "tecnicas": [
+          { "nome": "Ap Kubi Palkup Dollyo Chigui", "descricao": "Avançando o pé a largura de dois passos com o joelho da frente flexionado, ataque semicircular com o cotovelo na altura do rosto." },
+          { "nome": "Ap Kubi Palkup Pyojeok Chigui", "descricao": "Avançando o pé a largura de dois passos com o joelho da frente flexionado, agarrar o adversário e executar golpe de cotovelo no plexo." },
+          { "nome": "Ap Kubi Momtong Dubon Makki", "descricao": "Avançando o pé a largura de dois passos com o joelho da frente flexionado, defesa dupla para dentro." },
+          { "nome": "Orun/Wen Seogui Me Jumeok Nério Chigui", "descricao": "Pé a largura dos ombros com a ponta do pé direto/esquerdo apontado para o lado, ataque descendente com a borda externa do punho fechado." },
+          { "nome": "Dwit Coa Seogui", "descricao": "Base com os pés cruzados por trás." }
+        ]
+      },
+      "bal_ki_sul": {
+        "titulo": "Bal Ki Sul (Técnicas de Chutes)",
+        "preparacao": "Kyorugui Jumbi (posição de luta recuando o pé direito)",
+        "tecnicas": [
+          { "nome": "Ap Bal Twio Naeryo Chagui", "descricao": "Com o pé da frente, chute descendente com o calcanhar saltando." },
+          { "nome": "Ap Bal Redjhon (Dolgue) An Chagui", "descricao": "Com o pé da frente, girar e executar chute circular para dentro e saltando." },
+          { "nome": "Ap Bal Bandal + Ap Bal Redjhon (Dolgue) Chagui", "descricao": "Com o pé da frente, chute em diagonal com o peito do pé + chute giratório com o peito do pé." },
+          { "nome": "Dwit Bal Dollyo + Dwit Bal Tora Pakkat Chagui", "descricao": "Com o pé de trás, chute semicircular com o peito do pé + chute giratório batendo com a faca do pé." }
+        ]
+      },
+      "poomsae": {
+        "titulo": "Poomsae",
+        "itens": [
+          { "nome": "Taegeuk Sa Jang", "descricao": "Quarto Poomsae" },
+          { "nome": "Taegeuk Oh Jang", "descricao": "Quinto Poomsae" }
+        ]
+      },
+      "matcho_kyorugui": {
+        "titulo": "Matcho Kyorugui",
+        "itens": [
+          "Sebon Kyorugui (três passos) – números 21 a 25",
+          "Dubon Kyorugui – números 9 a 12"
+        ]
+      },
+      "iron": {
+        "titulo": "Iron (Conhecimentos)",
+        "perguntas_respostas": [
+          { "pergunta": "Qual é o significado da cor de cada faixa?", "resposta": "Branco = Pureza; Amarelo = Riqueza; Verde = Vida; Azul = Liberdade; Vermelho = Perigo; Preta = Sabedoria." },
+          { "pergunta": "Quando e quem introduziu o Tae Kwon Do no Brasil oficialmente?", "resposta": "Em 1970, o Grão-Mestre Sang Min Cho." },
+          { "pergunta": "Quais eram os nomes dos três reinos que fundaram a Coréia?", "resposta": "Shillá, Kogurio e Baek Je." }
+        ],
+        "quiz_significados": [
+          { "termo": "Tiro Torá", "opcoes": ["Meia volta", "Início / Eternidade", "Cruzado", "Apoio", "Torcido", "Trocar de base"], "resposta": "Meia volta" },
+          { "termo": "Taeguk", "opcoes": ["Meia volta", "Tae – início / Guk – eternidade", "Cruzado", "Apoio", "Torcido", "Trocar de base"], "resposta": "Tae – início / Guk – eternidade" },
+          { "termo": "Coá", "opcoes": ["Meia volta", "Início / Eternidade", "Cruzar", "Apoio", "Torcido", "Trocar de base"], "resposta": "Cruzar" },
+          { "termo": "Kodurô", "opcoes": ["Meia volta", "Início / Eternidade", "Cruzar", "Apoio", "Torcido", "Trocar de base"], "resposta": "Apoio" },
+          { "termo": "Pitrô", "opcoes": ["Meia volta", "Início / Eternidade", "Cruzar", "Apoio", "Torcido", "Trocar de base"], "resposta": "Torcido" },
+          { "termo": "Balbacuó ou Balbacuki", "opcoes": ["Meia volta", "Início / Eternidade", "Cruzar", "Apoio", "Torcido", "Trocar de base"], "resposta": "Trocar de base" }
+        ]
+      },
+      "kyorugui": { "titulo": "Kyorugui (Luta)", "descricao": "2 Lutas (sendo 1x1 e 2x2)" },
+      "kyok_pa": { "titulo": "Kyok Pa (Quebramento)", "descricao": "2 tábuas (mão e pé), 2 cm de espessura." }
+    }
+  },
+  {"id": "gub3",
+    "faixa": "Azul com Ponta Vermelha",
+    "titulo": "3º GUB",
+    "tempo_minimo": "8 meses",
+    "conteudo": {
+      "kibon_dong_jak": {
+        "titulo": "Kibon Dong Jak (Posições básicas de ataque e defesa)",
+        "tecnicas": [
+          { "nome": "Ap Kubi Olgul Pakkat Makki", "descricao": "Avançando o pé a largura de dois passos com o joelho da frente flexionado, defende na frente do rosto com o lado de fora do antebraço." },
+          { "nome": "Ap Kubi Batanson Momtong Makki", "descricao": "Avançando o pé a largura de dois passos com o joelho da frente flexionado, defende para dentro com a palma da mão." },
+          { "nome": "Ap Kubi Hansonnal Pitro Makki", "descricao": "Avançando o pé a largura de dois passos com o joelho da frente flexionado, defende no rosto para fora com a mão aberta e oposta ao pé que está à frente." },
+          { "nome": "Ap Kubi Du Jumeok Jeocho Jirugui", "descricao": "Avançando o pé a largura de dois passos com o joelho da frente flexionado, dois socos em gancho simultâneos na altura do abdômen." }
+        ]
+      },
+      "bal_ki_sul": {
+        "titulo": "Bal Ki Sul (Técnicas de Chutes)",
+        "preparacao": "Kyorugui Jumbi (posição de luta recuando o pé direito)",
+        "tecnicas": [
+          { "nome": "Ap Bal Pitro Chagui", "descricao": "Com o pé da frente, chute com a bola do pé (metatarso) torcido para fora." },
+          { "nome": "Dwit Bal Twio Tora Dwit Chagui", "descricao": "Com o pé de trás, chute giratório por trás com o calcanhar e saltando." },
+          { "nome": "Ap Bal Yop + Tora Yop + Tora Pakkat", "descricao": "Com o pé da frente, chute lateral com a faca do pé + chute giratório para frente com a faca do pé + chute giratório com a faca do pé." },
+          { "nome": "Ap Bal Dollyo + Ap Bal Miro + Ap Bal Naeryo", "descricao": "Com o pé da frente, chute semicircular com o peito do pé + chute frontal com o calcanhar + chute descendente com o calcanhar." }
+        ]
+      },
+      "poomsae": {
+        "titulo": "Poomsae",
+        "itens": [
+          { "nome": "Taegeuk Oh Jang", "descricao": "Quinto Poomsae" },
+          { "nome": "Taegeuk Yuk Jang", "descricao": "Sexto Poomsae" },
+          { "nome": "Poomsae extra", "descricao": "Conforme solicitado pelo mestre" }
+        ]
+      },
+      "matcho_kyorugui": {
+        "titulo": "Matcho Kyorugui",
+        "itens": [
+          "Sebon Kyorugui (três passos) – números 21 a 30",
+          "Dubon Kyorugui – números 13 a 16"
+        ]
+      },
+      "iron": {
+        "titulo": "Iron (Conhecimentos)",
+        "perguntas_respostas": [
+          { "pergunta": "Quem fundou o Tae Kwon Do?", "resposta": "General Kim Yu Shin." },
+          { "pergunta": "Quem é o pai do Taekwondo moderno?", "resposta": "General Choi Hong Hee." },
+          { "pergunta": "Quantas divisões de peso existem nas categorias mundial e olímpica?", "resposta": "8 divisões na categoria mundial e 4 na olímpica." }
+        ],
+        "quiz_significados": [
+          { "termo": "Sonnal Dung", "opcoes": ["Lado oposto a faca da mão", "Técnica de quebramento", "Ponta dos dedos", "Obrigado"], "resposta": "Lado oposto a faca da mão" },
+          { "termo": "Kyok-Pa", "opcoes": ["Lado oposto a faca da mão", "Técnica de quebramento", "Ponta dos dedos", "Obrigado"], "resposta": "Técnica de quebramento" },
+          { "termo": "Pyon Son-Kut", "opcoes": ["Lado oposto a faca da mão", "Técnica de quebramento", "Ponta dos dedos", "Obrigado"], "resposta": "Ponta dos dedos" },
+          { "termo": "Kamsahamnida", "opcoes": ["Lado oposto a faca da mão", "Técnica de quebramento", "Ponta dos dedos", "Obrigado"], "resposta": "Obrigado" }
+        ]
+      },
+      "kyorugui": { "titulo": "Kyorugui (Luta)", "descricao": "2 Lutas (sendo 1x1 e 2x1)" },
+      "kyok_pa": { "titulo": "Kyok Pa (Quebramento)", "descricao": "2 tábuas, 2 cm. Não repetir técnica anterior." }
+    }
+  },
+  {"id": "gub2",
+    "faixa": "Vermelha",
+    "titulo": "2º GUB",
+    "conteudo": {
+      "kibon_dong_jak": {
+        "titulo": "Kibon Dong Jak (Posições básicas de ataque e defesa)",
+        "tecnicas": [
+          { "nome": "Bon Seogui Batanson Momtong An Makki", "descricao": "Base na ponta do pé da frente, defende no meio com a palma da mão contrária ao pé da frente." },
+          { "nome": "Bon Seogui Kodureo Batanson Momtong An Makki com Deungjumeok Ap Chigui", "descricao": "Base na ponta do pé da frente, defesa no meio com a palma da mão contrária com apoio, seguida de ataque com as costas da mão na boca, com apoio." },
+          { "nome": "Ap Seogui Deungjumeok Pakkat Chigui", "descricao": "Avançando o pé a largura de um passo, ataque com as costas da mão para fora na lateral do rosto." },
+          { "nome": "Jumtchum Yop Jirugui", "descricao": "Pés afastados, joelhos flexionados, executar soco lateral." },
+          { "nome": "Ap Kubi Kaui Dubon Makki", "descricao": "Avançando dois passos, joelho da frente flexionado, defesa dupla em forma de tesoura." },
+          { "nome": "Moa Seogui Bo Jumeok", "descricao": "Pés juntos, mãos unidas representando Yin e Yang." }
+        ]
+      },
+      "bal_ki_sul": {
+        "titulo": "Bal Ki Sul (Técnicas de Chute)",
+        "preparacao": "Kyorugui Jumbi (posição de luta recuando o pé direito)",
+        "tecnicas": [
+          { "nome": "Dwit Bal Pyojeok Chagui", "descricao": "Chute circular para dentro com o pé de trás, batendo na palma da mão oposta." },
+          { "nome": "Dwit Bal Morup Chigui", "descricao": "Agarre de ombros e ataque com o joelho de trás." },
+          { "nome": "Ap Bal Bandal + Dwit Bal Dubal + Ap Bal Naeryo Chagui", "descricao": "Chute diagonal com o pé da frente + bandal duplo com salto + chute descendente com o calcanhar." },
+          { "nome": "Dwit Bal Dollyo + Ap Bal Redjhon (Dolgue) + Dwit Bal Torá Yop", "descricao": "Semicircular com o pé de trás + giratório com o pé da frente + giratório para frente com a faca do pé." }
+        ]
+      },
+      "poomsae": {
+        "titulo": "Poomsae",
+        "itens": [
+          { "nome": "Taegeuk Yuk Jang", "descricao": "Sexto Poomsae" },
+          { "nome": "Taegeuk Tchil Jang", "descricao": "Sétimo Poomsae" }
+        ]
+      },
+      "matcho_kyorugui": {
+        "titulo": "Matcho Kyorugui",
+        "itens": [
+          "Sebon Kyorugui (três passos) – números 1 a 10",
+          "Dubon Kyorugui – números 1 a 8",
+          "Hanja Kyorugui – números 1 a 9"
+        ]
+      },
+      "iron": {
+        "titulo": "Iron (Conhecimentos)",
+        "perguntas_respostas": [
+          { "pergunta": "Onde fica a sede da WT?", "resposta": "Em Seoul, na Coréia do Sul" },
+          { "pergunta": "Qual é o dia mundial do Taekwondo?", "resposta": "4 de setembro" },
+          { "pergunta": "O que significam os valores do Espírito do Taekwondo?", "resposta": "Cortesia (respeito), Integridade (honestidade), Perseverança (foco), Autocontrole (domínio) e Espírito Indomável (coragem)." }
+        ],
+        "quiz_significados": [
+          { "termo": "Ilosô", "opcoes": ["Ficar em pé", "Ajoelhar", "Joelho", "Queixo", "Estilo ou escola"], "resposta": "Ficar em pé" },
+          { "termo": "Morup kurô", "opcoes": ["Ficar em pé", "Ajoelhar (forma de sentar-se formalmente na cultura coreana)", "Joelho", "Queixo", "Estilo ou escola"], "resposta": "Ajoelhar (forma de sentar-se formalmente na cultura coreana)" },
+          { "termo": "Morup", "opcoes": ["Ficar em pé", "Ajoelhar", "Joelho", "Queixo", "Estilo ou escola"], "resposta": "Joelho" },
+          { "termo": "Kwan", "opcoes": ["Ficar em pé", "Ajoelhar", "Joelho", "Queixo", "Estilo ou escola"], "resposta": "Estilo ou escola" },
+          { "termo": "Teok", "opcoes": ["Ficar em pé", "Ajoelhar", "Joelho", "Queixo", "Estilo ou escola"], "resposta": "Queixo" }
+        ]
+      },
+        "kyorugui": { "titulo": "Kyorugui (Luta)", "descricao": "2 lutas (sendo 1x1 e cada um por si)"},
+        "kyok_pa": { "titulo": "Kyok Pa (Quebramento)", "descricao": "1 tábua com chute: Twio Ap Chagui (na altura da mão) ou Twio Yop Chagui (sobre uma pessoa abaixada), 6 telhas com a mão (mulheres e crianças podem pedir redução do número de telhas)"}
+    }
+  },
+  {"id": "gub1",
+    "faixa": "Vermelha com Ponta Preta",
+    "titulo": "1º GUB",
+    "tempo_minimo": "10 meses",
+    "conteudo": {
+      "kibon_dong_jak": {
+        "titulo": "1 - Kibon Dong Jak (Posições básicas de ataque e defesa)",
+        "tecnicas": [
+          { "nome": "Ap Kubi DangkyoTeok Chigui", "descricao": "Avançando o pé a largura de dois passos com o joelho da frente flexionado, puxar o adversário e bater com a mão contrária ao pé da frente no queixo." },
+          { "nome": "Ap Kubi Ue Santul Makki", "descricao": "Avançando o pé a largura de dois passos com o joelho da frente flexionado, defesa simultânea em baixo e em cima." },
+          { "nome": "Ap Kubi Palkup Dollyo Barô Jirugui", "descricao": "Avançando o pé a largura de dois passos com o joelho da frente flexionado, ataque com o cotovelo contrário ao pé da frente." },
+          { "nome": "Dwit Kubi Kodureo Arae Makki", "descricao": "Base em “L”, defesa dupla em baixo." },
+          { "nome": "Graduações anteriores", "descricao": "Todas as técnicas das graduações anteriores a serem escolhidas pelo mestre." }
+        ]
+      },
+      "bal_ki_sul": {
+        "titulo": "2 - Bal Ki Sul (Técnicas de Chutes)",
+        "tecnicas": [
+          { "nome": "Dubal Dangseong Chagui", "descricao": "Chute frontal saltando duplo." },
+          { "nome": "Revisão Geral", "descricao": "Todos os chutes das graduações anteriores a serem escolhidos pelo mestre." }
+        ]
+      },
+      "poomsae": {
+        "titulo": "3 - Poomsae",
+        "itens": [
+          { "nome": "Taegeuk Tchil Jang", "descricao": "Sétimo Poomsae" },
+          { "nome": "Revisão Geral", "descricao": "Todos os poon-ses das graduações anteriores a serem escolhidos pelo mestre." }
+        ]
+      },
+      "matcho_kyorugui": {
+        "titulo": "4 - Matcho Kyorugui",
+        "itens": [
+          "Sebon Kyorugui (três passos) – Todos a serem escolhidos pelo mestre.",
+          "Dubon Kyorugui – Todos a serem escolhidos pelo mestre.",
+          "Hanja Kyorugui – Todos a serem escolhidos pelo mestre."
+        ]
+      },
+      "iron": {
+        "titulo": "5 - Iron (Conhecimentos)",
+        "atividades": [
+          "Pesquisar sobre algum tema de Tae Kwon Do",
+          "Currículo técnico",
+          "Descrever todos os movimentos de um Poon-se (a ser escolhido pelo mestre)"
+        ]
+      },
+      "kyorugui": {
+        "titulo": "6 - Kyorugui (Luta)",
+        "modalidades": ["1x1", "2x1", "2x2", "“Cada um por si”"]
+      },
+      "kyok_pa": {
+        "titulo": "7 - Kyok Pa (Quebramento)",
+        "itens": [
+          "2 tábuas com chute Twio Ap Chagui (na altura da ponta dos dedos) e Twio Yop Chagui (sobre duas pessoas abaixadas)",
+          "7 telhas com a mão"
+        ]
+      },
+      "hon_shin_sul": {
+        "titulo": "8 - Hon Shin Sul (Defesa Pessoal)",
+        "descricao": "9 defesas"
+      },
+      "treinamento_especial": {
+        "titulo": "9 - Treinamento Especial",
+        "regra": "Para prestar exame para a Faixa Preta, o aluno deve candidatar-se ao exame 6 meses antes da data do exame e participar por todo este período do Treino dos Faixas Pretas na sede da Associação, no mínimo 1 vez por semana."
+      }
+    }
+  }
+]

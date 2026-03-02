@@ -9,7 +9,7 @@ function carregarTecnicasIniciais() {
         tecnicas = JSON.parse(storage);
         iniciarSistema();
     } else {
-        fetch("tecnicas.json")
+        fetch("data/tecnicas.json")
             .then(r => r.json())
             .then(data => {
                 tecnicas = data;

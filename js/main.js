@@ -5,6 +5,7 @@ let respostaMontada = [];
 
 document.addEventListener("DOMContentLoaded", function() {
     carregarTecnicasIniciais();
+    ativarImportacao();
 });
 
 function trocarTela(id) {
