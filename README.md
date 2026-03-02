@@ -15,24 +15,6 @@ Projeto desenvolvido com foco em:
 
 ---
 
-## 🏠 Aba: Cadastro
-
-Permite cadastrar novas técnicas manualmente.
-
-### Funcionalidades:
-
-- Inserir:
-  - Nome correto da técnica
-  - Link da imagem
-  - Alternativas erradas
-- Salvar no `localStorage`
-- Listar técnicas cadastradas
-- Excluir técnicas individualmente
-- Mostrar / ocultar lista
-- Sistema de persistência local
-
----
-
 ## 🎮 Aba: Jogo
 
 Sistema principal de quiz visual.
@@ -108,6 +90,22 @@ Controle do banco local de técnicas.
 - 📥 Importar técnicas (`.json`)
 - ♻ Resetar banco (limpa `localStorage`)
 - Controle total sem backend
+
+- Cadastro
+
+Permite cadastrar novas técnicas manualmente.
+
+### Funcionalidades:
+
+- Inserir:
+  - Nome correto da técnica
+  - Link da imagem
+  - Alternativas erradas
+- Salvar no `localStorage`
+- Listar técnicas cadastradas
+- Excluir técnicas individualmente
+- Mostrar / ocultar lista
+- Sistema de persistência local
 
 ---
 
