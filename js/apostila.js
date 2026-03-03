@@ -59,33 +59,49 @@ function renderQuiz(container, quiz) {
     tituloQuiz.textContent = "Quiz - Diga o significado";
     container.appendChild(tituloQuiz);
 
-    quiz.forEach(item => {
+    quiz.forEach((item, index) => {
 
-        const div = document.createElement("div");
-        div.style.marginBottom = "15px";
+        const wrapper = document.createElement("div");
+        wrapper.classList.add("quiz-item");
 
-        div.appendChild(
-            criarParagrafo(`<strong>${item.termo}</strong>`)
-        );
+        const pergunta = document.createElement("p");
+        pergunta.innerHTML = `<strong>${item.termo}</strong>`;
+        wrapper.appendChild(pergunta);
 
-        item.opcoes.forEach(opcao => {
+        const opcoesEmbaralhadas = embaralhar([...item.opcoes]);
+
+        opcoesEmbaralhadas.forEach(opcao => {
 
             const botao = document.createElement("button");
             botao.textContent = opcao;
 
-            botao.onclick = () => {
+            botao.addEventListener("click", () => {
 
-                const botoes = div.querySelectorAll("button");
-                botoes.forEach(b => b.style.backgroundColor = "");
+                const botoes = wrapper.querySelectorAll("button");
 
-                botao.style.backgroundColor =
-                    opcao === item.resposta ? "green" : "red";
-            };
+                botoes.forEach(b => {
+                    b.disabled = true;
+                    b.classList.remove("resultado-correto", "resultado-erro");
+                });
 
-            div.appendChild(botao);
+                if (opcao === item.resposta) {
+                    botao.classList.add("resultado-correto");
+                } else {
+                    botao.classList.add("resultado-erro");
+
+                    botoes.forEach(b => {
+                        if (b.textContent === item.resposta) {
+                            b.classList.add("resultado-correto");
+                        }
+                    });
+                }
+
+            });
+
+            wrapper.appendChild(botao);
         });
 
-        container.appendChild(div);
+        container.appendChild(wrapper);
     });
 }
 
@@ -146,82 +162,5 @@ function mostrarFaixa(id) {
             renderQuiz(container, secao.quiz_significados);
         }
 
-    });
-}
-
-function ativarQuizSignificado() {
-
-    const perguntas = document.querySelectorAll(".quiz-significado .pergunta");
-
-    perguntas.forEach(pergunta => {
-
-        const respostaCorreta = pergunta.dataset.resposta.trim();
-        const botoes = pergunta.querySelectorAll("button");
-
-        botoes.forEach(botao => {
-
-            botao.addEventListener("click", function () {
-
-                // trava todos os botões da pergunta
-                botoes.forEach(b => {
-                    b.disabled = true;
-                    b.classList.remove("resultado-correto", "resultado-erro");
-                });
-
-                if (botao.innerText.trim() === respostaCorreta) {
-                    botao.classList.add("resultado-correto");
-                } else {
-                    botao.classList.add("resultado-erro");
-
-                    // marca o correto automaticamente
-                    botoes.forEach(b => {
-                        if (b.innerText.trim() === respostaCorreta) {
-                            b.classList.add("resultado-correto");
-                        }
-                    });
-                }
-
-            });
-
-        });
-
-    });
-}
-
-function carregarOpcoesSignificado(opcoes, correta) {
-    const div = document.getElementById("opcoesSignificado");
-    if (!div) return;
-
-    div.innerHTML = "";
-
-    const opcoesEmbaralhadas = embaralhar([...opcoes]);
-
-    opcoesEmbaralhadas.forEach(opcao => {
-        const btn = document.createElement("button");
-        btn.innerText = opcao;
-
-        btn.addEventListener("click", function () {
-
-            const grupo = div.querySelectorAll("button");
-
-            grupo.forEach(b => {
-                b.disabled = true;
-                b.classList.remove("resultado-correto", "resultado-erro");
-            });
-
-            if (opcao === correta) {
-                btn.classList.add("resultado-correto");
-            } else {
-                btn.classList.add("resultado-erro");
-
-                grupo.forEach(b => {
-                    if (b.innerText === correta) {
-                        b.classList.add("resultado-correto");
-                    }
-                });
-            }
-        });
-
-        div.appendChild(btn);
     });
 }
