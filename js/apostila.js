@@ -110,7 +110,6 @@ function mostrarFaixa(id) {
     const faixa = apostila.find(f => f.id === id);
     const container = document.getElementById("conteudo-faixa");
     container.innerHTML = "";
-    container.scrollIntoView({ behavior: "smooth", block: "start" });
 
     if (!faixa) {
         container.innerHTML = "<p>Faixa não encontrada.</p>";
@@ -164,4 +163,6 @@ function mostrarFaixa(id) {
         }
 
     });
+
+    container.scrollIntoView({ behavior: "smooth", block: "start" });
 }
