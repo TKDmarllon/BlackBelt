@@ -166,3 +166,35 @@ function mostrarFaixa(id) {
 
     container.scrollIntoView({ behavior: "smooth", block: "start" });
 }
+
+ // Botão para resetar o quiz
+function resetarQuiz() {
+
+    // Reativa todos os botões do quiz
+    document.querySelectorAll(".quiz-item button").forEach(botao => {
+
+        botao.disabled = false;
+
+        botao.classList.remove(
+            "resultado-correto",
+            "resultado-erro"
+        );
+
+    });
+
+    // Esconde todas as respostas abertas
+    const respostas = document.querySelectorAll("#conteudo-faixa p");
+
+    respostas.forEach(resposta => {
+
+        if (
+            resposta.previousElementSibling &&
+            resposta.previousElementSibling.tagName === "BUTTON" &&
+            resposta.previousElementSibling.textContent === "Mostrar resposta"
+        ) {
+            resposta.style.display = "none";
+        }
+
+    });
+
+}

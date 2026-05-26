@@ -110,6 +110,20 @@ h2 {
     border-radius: 8px;
 }
 
+.resetar-quiz{
+    background:#444;
+    color:white;
+    padding:10px 15px;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+    margin-bottom:15px;
+}
+
+.resetar-quiz:hover{
+    background:#222;
+}
+
 /* ================================================= */
 /* 5️⃣ ABA JOGO */
 /* ================================================= */
