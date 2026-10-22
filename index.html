@@ -1,180 +1,129 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Equipe Black Belt</title>
-
-<link rel="stylesheet" href="css/style.css">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="theme-color" content="#102c3a">
+    <meta name="description" content="Estude técnicas, poomsae e conhecimentos de Taekwondo com a equipe Black Belt.">
+    <title>Equipe Black Belt | Taekwondo</title>
+    <link rel="stylesheet" href="css/style.css?v=brand-logo-1">
 </head>
-
 <body>
+    <header class="cabecalho">
+        <a class="marca" href="#inicio" aria-label="Equipe Black Belt, início" onclick="trocarTela('telaInicial'); return false;">
+            <img class="marca-simbolo" src="assets/images/logo-equipe-black-belt.jpg" alt="">
+            <span><strong>Black Belt</strong><small>Equipe de Taekwondo</small></span>
+        </a>
+        <p class="credito">Marllon Rocha · Equipe Black Belt</p>
+    </header>
 
-<div class="credito">
-    <div>By Marllon Rocha - Equipe Black Belt</div>
-    <img src="https://img.freepik.com/premium-vector/south-korea-national-flag-grunge-brush-stroke-vector-illustration-transparent-background_601298-10343.jpg"
-         style="width:60px; height:60px; border-radius:50%; margin-top:5px;">
-</div>
-
-<h1>🥋Black Belt</h1>
-
-<section id="telaInicial" class="tela">
-
-    <div class="conteudo-inicial">
-        <img src="https://taekwondo-horvat.com/wp-content/uploads/2021/03/IMG_0217-1024x947.jpg" 
-             alt="Imagem inicial"
-             class="imagem-inicial">
-
-        <img src="https://i.pinimg.com/736x/67/8a/d9/678ad98e3a425a7db555372eefb78cae.jpg" 
-             alt="Imagem inicial 2"
-             class="imagem-inicial">
-    </div>
-
-</section>
-
-<section id="jogoTela" class="tela hidden">
-<h2>Escreva o nome da técnica</h2>
-
-<img id="imagemTecnica">
-<div id="areaMontada"></div>
-<div id="opcoes"></div>
-
-<button class="verificar" onclick="verificar()">Verificar</button>
-<button class="apagar" onclick="apagarUltima()">Apagar Última</button>
-<button class="pular" onclick="pularTecnica()">Pular</button>
-
-<p id="resultado"></p>
-
-</section>
-
-<section id="apostila" class="tela hidden">
-    <h2>Apostila Black Belt</h2>
-        <!-- BOTÕES DAS FAIXAS -->
-    <div class="menu-faixas">
-
-        <button onclick="mostrarFaixa('gub10')">Faixa Branca 10º GUB</button>
-        <button onclick="mostrarFaixa('gub8')">Faixa Amarela 8º GUB</button>
-        <button onclick="mostrarFaixa('gub7')">Faixa Amarela Ponta Verde 7º GUB</button>
-        <button onclick="mostrarFaixa('gub6')">Faixa Verde 6º GUB</button>
-        <button onclick="mostrarFaixa('gub5')">Faixa Verde Ponta Azul 5º GUB</button>
-        <button onclick="mostrarFaixa('gub4')">Faixa Azul 4º GUB</button>
-        <button onclick="mostrarFaixa('gub3')">Faixa Azul Ponta Vermelha 3º GUB</button>
-        <button onclick="mostrarFaixa('gub2')">Faixa Vermelha 2º GUB</button>
-        <button onclick="mostrarFaixa('gub1')">Faixa Vermelha Ponta Preta 1º GUB</button>
-
-    </div>
-    <div id="conteudo-faixa"></div>
-    <br>
-    <button onclick="resetarQuiz()">🔄 Resetar Respostas</button>
-    
-    
-</section>
-
-<section id="poomsaeTela" class="tela hidden">
-<h2>📺 Poomsae</h2>
-
-<div class="poomsae-grid">
-
-<button onclick="abrirPoomsae(61)">Faixa Amarela - Taegeuk 1 Jang</button>
-<button onclick="abrirPoomsae(99)">Faixa Amarela Ponta Verde - Taegeuk 2 Jang</button>
-<button onclick="abrirPoomsae(140)">Faixa Verde - Taegeuk 3 Jang</button>
-<button onclick="abrirPoomsae(188)">Faixa Verde Ponta Azul - Taegeuk 4 Jang</button>
-<button onclick="abrirPoomsae(234)">Faixa Azul - Taegeuk 5 Jang</button>
-<button onclick="abrirPoomsae(285)">Faixa Azul Ponta Vermelha - Taegeuk 6 Jang</button>
-<button onclick="abrirPoomsae(340)">Faixa Vermelha - Taegeuk 7 Jang</button>
-<button onclick="abrirPoomsae(396)">Faixa Vermelha Ponta Preta - Taegeuk 8 Jang</button>
-
-</div>
-
-</section>
-
-<section id="sebonDubon" class="tela hidden">
-    <h2>📺 Sebon e Dubon Kyorugui</h2>
-    <h2>DISPONÍVEL APÓS A GRAVAÇÃO DOS VÍDEOS</h2>
-
-    <div class="container-kyorugui">
-
-        <!-- SEBON -->
-        <div class="card-kyorugui">
-            <h3>Sebon Kyorugui</h3>
-
-            <div class="lista-botoes">
-                <button>Sebon Kyorugui - 1 a 5</button>
-                <button>Sebon Kyorugui - 6 a 10</button>
-                <button>Sebon Kyorugui - 11 a 15</button>
-                <button>Sebon Kyorugui - 16 a 20</button>
-                <button>Sebon Kyorugui - 21 a 25</button>
-                <button>Sebon Kyorugui - 26 a 30</button>
+    <main>
+        <section id="telaInicial" class="tela tela-inicial" aria-labelledby="titulo-inicial">
+            <div class="hero">
+                <div class="hero-conteudo">
+                    <p class="sobretitulo">EQUIPE BLACK BELT</p>
+                    <h1 id="titulo-inicial">Treine. Estude. Evolua.</h1>
+                    <p>Um espaço para revisar técnicas, conhecer os poomsae e desafiar seus conhecimentos.</p>
+                </div>
+                <img src="assets/images/taekwondo-partes-do-corpo.png" alt="Infográfico com os nomes coreanos das partes do corpo usadas no Taekwondo" class="imagem-inicial" fetchpriority="high">
             </div>
-        </div>
+        </section>
 
-        <!-- DUBON -->
-        <div class="card-kyorugui">
-            <h3>Dubon Kyorugui</h3>
-
-            <div class="lista-botoes">
-                <button>Dubon Kyorugui - 1 a 4</button>
-                <button>Dubon Kyorugui - 5 a 8</button>
-                <button>Dubon Kyorugui - 9 a 12</button>
-                <button>Dubon Kyorugui - 13 a 16</button>
-                <button>Hanja Kyorugui - 1 a 9</button>
+        <section id="jogoTela" class="tela hidden" aria-labelledby="titulo-jogo">
+            <div class="secao-cabecalho"><p class="sobretitulo">PRATIQUE</p><h1 id="titulo-jogo">Jogo das técnicas</h1><p>Monte o nome da técnica escolhendo as palavras.</p></div>
+            <div id="estadoJogo" class="mensagem-estado" role="status" aria-live="polite"></div>
+            <img id="imagemTecnica" alt="Imagem da técnica de Taekwondo" class="imagem-tecnica" hidden>
+            <h2 class="rotulo-resposta">Sua resposta</h2>
+            <div id="areaMontada" aria-live="polite" aria-label="Palavras selecionadas"></div>
+            <div id="opcoes" aria-label="Palavras disponíveis"></div>
+            <div class="acoes-jogo">
+                <button class="verificar" type="button" onclick="verificar()">Verificar resposta</button>
+                <button class="apagar" type="button" onclick="apagarUltima()">Apagar última</button>
+                <button class="pular" type="button" onclick="pularTecnica()">Pular técnica</button>
             </div>
-        </div>
+        </section>
 
+        <section id="apostila" class="tela hidden" aria-labelledby="titulo-apostila">
+            <div class="secao-cabecalho"><p class="sobretitulo">CONTEÚDO TÉCNICO</p><h1 id="titulo-apostila">Apostila Black Belt</h1><p>Escolha sua graduação para consultar o conteúdo.</p></div>
+            <div id="estadoApostila" class="mensagem-estado" role="status" aria-live="polite">Carregando conteúdo…</div>
+            <div class="menu-faixas" aria-label="Graduações">
+                <button type="button" onclick="mostrarFaixa('gub10')">Faixa Branca · 10º GUB</button>
+                <button type="button" onclick="mostrarFaixa('gub8')">Faixa Amarela · 8º GUB</button>
+                <button type="button" onclick="mostrarFaixa('gub7')">Amarela ponta verde · 7º GUB</button>
+                <button type="button" onclick="mostrarFaixa('gub6')">Faixa Verde · 6º GUB</button>
+                <button type="button" onclick="mostrarFaixa('gub5')">Verde ponta azul · 5º GUB</button>
+                <button type="button" onclick="mostrarFaixa('gub4')">Faixa Azul · 4º GUB</button>
+                <button type="button" onclick="mostrarFaixa('gub3')">Azul ponta vermelha · 3º GUB</button>
+                <button type="button" onclick="mostrarFaixa('gub2')">Faixa Vermelha · 2º GUB</button>
+                <button type="button" onclick="mostrarFaixa('gub1')">Vermelha ponta preta · 1º GUB</button>
+            </div>
+            <div id="conteudo-faixa" aria-live="polite"></div>
+            <button class="botao-secundario resetar-quiz" type="button" onclick="resetarQuiz()">↻ Resetar respostas</button>
+        </section>
+
+        <section id="poomsaeTela" class="tela hidden" aria-labelledby="titulo-poomsae">
+            <div class="secao-cabecalho"><p class="sobretitulo">VÍDEOS DE ESTUDO</p><h1 id="titulo-poomsae">Poomsae</h1><p>Assista ao poomsae correspondente à sua faixa.</p></div>
+            <div class="poomsae-grid">
+                <button type="button" onclick="reproduzirPoomsae(61, 'Taegeuk 1 Jang', this)"><strong>Taegeuk 1 Jang</strong><span>Faixa amarela</span></button>
+                <button type="button" onclick="reproduzirPoomsae(99, 'Taegeuk 2 Jang', this)"><strong>Taegeuk 2 Jang</strong><span>Amarela ponta verde</span></button>
+                <button type="button" onclick="reproduzirPoomsae(140, 'Taegeuk 3 Jang', this)"><strong>Taegeuk 3 Jang</strong><span>Faixa verde</span></button>
+                <button type="button" onclick="reproduzirPoomsae(188, 'Taegeuk 4 Jang', this)"><strong>Taegeuk 4 Jang</strong><span>Verde ponta azul</span></button>
+                <button type="button" onclick="reproduzirPoomsae(234, 'Taegeuk 5 Jang', this)"><strong>Taegeuk 5 Jang</strong><span>Faixa azul</span></button>
+                <button type="button" onclick="reproduzirPoomsae(285, 'Taegeuk 6 Jang', this)"><strong>Taegeuk 6 Jang</strong><span>Azul ponta vermelha</span></button>
+                <button type="button" onclick="reproduzirPoomsae(340, 'Taegeuk 7 Jang', this)"><strong>Taegeuk 7 Jang</strong><span>Faixa vermelha</span></button>
+                <button type="button" onclick="reproduzirPoomsae(396, 'Taegeuk 8 Jang', this)"><strong>Taegeuk 8 Jang</strong><span>Vermelha ponta preta</span></button>
+            </div>
+            <div class="player-poomsae" aria-live="polite">
+                <h2 id="tituloVideoPoomsae">Vídeo do poomsae</h2>
+                <p id="avisoVideoPoomsae" class="player-placeholder">Escolha uma faixa para assistir ao trecho aqui na página.</p>
+                <iframe id="videoPoomsae" title="Vídeo de poomsae" hidden allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </section>
+
+        <section id="sebonDubon" class="tela hidden" aria-labelledby="titulo-kyorugui">
+            <div class="secao-cabecalho"><p class="sobretitulo">EM BREVE</p><h1 id="titulo-kyorugui">Sebon e Dubon Kyorugui</h1><p>Os vídeos desta área serão adicionados quando estiverem disponíveis.</p></div>
+            <div class="aviso-em-breve" role="status">🎥 Estamos preparando as gravações para esta seção.</div>
+        </section>
+
+        <section id="adminTela" class="tela hidden" aria-labelledby="titulo-admin">
+            <div class="secao-cabecalho"><p class="sobretitulo">FERRAMENTAS DA EQUIPE</p><h1 id="titulo-admin">Administração</h1><p>Gerencie as técnicas guardadas neste dispositivo.</p></div>
+            <div class="acoes-admin">
+                <button class="exportar" type="button" onclick="exportarTecnicas()">⇩ Exportar técnicas</button>
+                <input type="file" id="importFile" accept=".json,application/json" class="campo-arquivo">
+                <label class="botao importar" for="importFile">⇧ Importar técnicas</label>
+                <button class="resetar-banco" type="button" onclick="resetarBanco()">Resetar banco de técnicas</button>
+            </div>
+            <div class="cartao-admin">
+                <h2>Cadastrar técnica</h2>
+                <label for="imagemInput">Link da imagem</label>
+                <input type="url" id="imagemInput" placeholder="https://exemplo.com/imagem.jpg" autocomplete="url">
+                <label for="respostaInput">Nome correto <small>(separe as palavras por espaço)</small></label>
+                <textarea id="respostaInput" placeholder="Ex.: Ap Kubi Momtong Makki" rows="2"></textarea>
+                <label for="erradasInput">Palavras alternativas <small>(separe por vírgula)</small></label>
+                <textarea id="erradasInput" placeholder="Ex.: Dwit, Jirugui, Olgul" rows="2"></textarea>
+                <button class="cadastrar" type="button" onclick="cadastrarTecnica()">Cadastrar técnica</button>
+            </div>
+            <button class="toggle-btn" type="button" aria-expanded="false" aria-controls="listaContainer" onclick="toggleLista()">Mostrar técnicas cadastradas</button>
+            <div id="listaContainer" class="lista-container hidden"><h2>Técnicas cadastradas</h2><div id="listaTecnicas"></div></div>
+        </section>
+    </main>
+
+    <div id="overlayResultado" class="overlay hidden" role="status" aria-live="assertive" aria-atomic="true">
+        <div id="overlayTexto"></div>
     </div>
-</section>
 
-<section id="adminTela" class="tela hidden">
-    <h2>Administração</h2>
+    <nav class="menuInferior" aria-label="Navegação principal">
+        <button type="button" data-tela="jogoTela" aria-label="Jogo"><span aria-hidden="true">🎯</span><span>Jogo</span></button>
+        <button type="button" data-tela="apostila" aria-label="Apostila"><span aria-hidden="true">📖</span><span>Apostila</span></button>
+        <button type="button" data-tela="poomsaeTela" aria-label="Poomsae"><span aria-hidden="true">🥋</span><span>Poomsae</span></button>
+        <button type="button" data-tela="sebonDubon" aria-label="Sebon e Dubon"><span aria-hidden="true">🤝</span><span>S/D</span></button>
+        <button type="button" data-tela="adminTela" aria-label="Administração"><span aria-hidden="true">⚙️</span><span>Admin</span></button>
+    </nav>
 
-    <button class="exportar" onclick="exportarTecnicas()">
-        📤 Exportar Técnicas
-    </button>
-
-    <input type="file" id="importFile" hidden>
-    <button class="importar" onclick="document.getElementById('importFile').click()">
-        📥 Importar Técnicas
-    </button>
-
-    <button style="background:#b00020; color:white;" onclick="resetarBanco()">
-        🔄 Resetar Banco de Dados
-    </button>
-
-    <h4>Cadastrar Técnica</h4>
-
-<input type="text" id="imagemInput" placeholder="Link da imagem">
-<textarea id="respostaInput" placeholder="Resposta correta (separar por espaço)"></textarea>
-<textarea id="erradasInput" placeholder="Opções de nomes errados (separar por vírgula)"></textarea>
-
-<button class="cadastrar" onclick="cadastrarTecnica()">Cadastrar</button>
-
-
-<button class="toggle-btn" onclick="toggleLista()">Mostrar Técnicas Cadastradas</button>
-
-<div id="listaContainer" class="hidden">
-<h3>Técnicas Cadastradas</h3>
-<div id="listaTecnicas"></div>
-</div>
-</section>
-
-<div id="overlayResultado" class="overlay hidden">
-    <div id="overlayTexto"></div>
-</div>
-
-<div class="menuInferior">
-    <button onclick="trocarTela('jogoTela')">Jogo</button>
-    <button onclick="trocarTela('apostila')">Apostila</button>
-    <button onclick="trocarTela('poomsaeTela')">Poomsae</button>
-    <button onclick="trocarTela('sebonDubon')">Sebon/Dubon</button>
-    <button onclick="trocarTela('adminTela')">Admin</button>
-</div>
-
-<script src="js/utils.js"></script>
-<script src="js/admin.js"></script>
-<script src="js/jogo.js"></script>
-<script src="js/apostila.js"></script>
-<script src="js/main.js"></script>
-
+    <script src="js/utils.js"></script>
+    <script src="js/admin.js"></script>
+    <script src="js/jogo.js"></script>
+    <script src="js/apostila.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>

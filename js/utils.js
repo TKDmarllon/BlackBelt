@@ -1,26 +1,30 @@
 function embaralhar(array) {
-    return array.sort(() => Math.random() - 0.5);
+    const resultado = [...array];
+    for (let i = resultado.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [resultado[i], resultado[j]] = [resultado[j], resultado[i]];
+    }
+    return resultado;
 }
 
-function abrirPoomsae(segundos) {
-    window.open(
-        `https://www.youtube.com/watch?v=y-pmLZmjoG8&t=${segundos}s`,
-        "_blank"
-    );
-}
+function reproduzirPoomsae(segundos, nome, opcao) {
+    const inicio = Number(segundos);
+    if (!Number.isFinite(inicio) || inicio < 0) return;
+    const player = document.getElementById("videoPoomsae");
+    const aviso = document.getElementById("avisoVideoPoomsae");
+    const titulo = document.getElementById("tituloVideoPoomsae");
+    if (!player) return;
 
-function ativarAcordeao() {
-    document.querySelectorAll(".acordeao").forEach(botao => {
-        botao.addEventListener("click", function () {
-            this.classList.toggle("ativo");
-            const painel = this.nextElementSibling;
+    if (opcao?.parentElement?.classList.contains("poomsae-grid")) {
+        document.querySelectorAll(".poomsae-grid button").forEach(botao => botao.removeAttribute("aria-current"));
+        opcao.setAttribute("aria-current", "true");
+        opcao.after(player.closest(".player-poomsae"));
+    }
 
-            if (painel.style.display === "block") {
-                painel.style.display = "none";
-            } else {
-                painel.style.display = "block";
-                painel.scrollIntoView({ behavior: 'smooth', block: 'start' });
-            }
-        });
-    });
+    titulo.textContent = nome || "Vídeo do poomsae";
+    aviso.hidden = true;
+    player.title = `Vídeo de Taekwondo: ${nome || "Poomsae"}`;
+    player.src = `https://www.youtube-nocookie.com/embed/y-pmLZmjoG8?start=${Math.floor(inicio)}&autoplay=1`;
+    player.hidden = false;
+    player.scrollIntoView({ behavior: "smooth", block: "center" });
 }

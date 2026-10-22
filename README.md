@@ -1,140 +1,45 @@
-# 🥋 Black Belt – Sistema de Estudo para Taekwondo
+# 🥋 Equipe Black Belt
 
-Sistema web interativo desenvolvido para auxiliar alunos da Equipe Black Belt no estudo técnico, teórico e prático do Taekwondo.
+Página estática de apoio aos alunos da equipe Black Belt. Reúne um jogo para praticar nomes de técnicas, conteúdo por graduação, links para vídeos de poomsae e ferramentas locais para administrar o banco de técnicas.
 
-Projeto desenvolvido com foco em:
+## Áreas da página
 
-- 📱 Mobile First
-- 💾 Armazenamento local (localStorage)
-- 🎯 Aprendizado gamificado
-- 🥋 Organização por faixa (GUB)
+- **Início:** atalhos para as atividades de estudo.
+- **Jogo:** identifica técnicas por imagem e monta os nomes com palavras selecionáveis.
+- **Apostila:** mostra o conteúdo disponível em `data/apostila.json`, organizado pelas graduações cadastradas no arquivo.
+- **Poomsae:** reproduz os vídeos incorporados na página, a partir do trecho definido para cada faixa.
+- **Sebon/Dubon:** área informativa, aguardando a publicação das gravações.
+- **Administração:** importa, exporta, cadastra e remove técnicas no dispositivo atual.
 
----
+## Executar localmente
 
-# 📑 Estrutura do Sistema (Organizado por Abas)
+Como a página carrega arquivos JSON com `fetch`, abra o projeto por um servidor web local ou publique-o em uma hospedagem estática, como GitHub Pages. Abrir `index.html` diretamente (`file://`) é bloqueado pelo navegador.
 
----
+No terminal, dentro da pasta do projeto, inicie o servidor local:
 
-## 🎮 Aba: Jogo
+```powershell
+py -m http.server 8000
+```
 
-Sistema principal de quiz visual.
+Depois, abra <http://localhost:8000>. No VS Code, também é possível usar a extensão Live Server e escolher **Open with Live Server** no `index.html`.
 
-### Funcionamento:
+## Dados e privacidade
 
-- Exibe imagem da técnica
-- Mostra palavras embaralhadas
-- Usuário monta o nome correto
-- Botões:
-  - ✅ Verificar resposta
-  - 🔙 Apagar última palavra
-  - ⏭ Pular técnica
-- Feedback visual:
-  - Verde = correto
-  - Vermelho = errado
-- Técnicas são embaralhadas automaticamente
+O catálogo inicial de técnicas vem de `data/tecnicas.json`. Após o primeiro carregamento, o catálogo e as alterações administrativas são armazenados no `localStorage` do navegador. Esses dados pertencem ao perfil e ao dispositivo em uso; exporte um arquivo JSON para transferi-los ou guardar uma cópia.
 
----
+O conteúdo da apostila é carregado de `data/apostila.json`. O site não usa servidor de aplicação nem banco de dados remoto. Imagens e vídeos podem depender de serviços externos e de conexão com a internet.
 
-## 🥋 Aba: Poomsae
+## Estrutura
 
-Área dedicada ao estudo das formas.
-
-### Funcionalidades:
-
-- Lista de poomsae por faixa
-- Redirecionamento para vídeos no YouTube
-- Abertura com minutagem específica
-- Não utiliza iframe (evita erro 153)
-- Funciona via link direto
-
----
-
-## 📖 Aba: Apostila Black Belt
-
-Área teórica organizada por faixa (GUB).
-
-### Estrutura:
-
-- Botões por faixa:
-  - 10º ao 1º GUB
-- Sistema tipo sanfona (accordion)
-- Exibição individual de conteúdo
-
-### Conteúdo por faixa:
-
-- Kibon Dong Jak
-- Bal Ki Sul
-- Poomsae (apenas nome)
-- Matcho Kyorugui (texto)
-- Iron (mini quiz interativo)
-- Diga o significado (múltipla escolha com correção automática)
-- Kyorugui (texto)
-- Kyok Pa (texto)
-
-### Recursos interativos:
-
-- Botão "Mostrar resposta" no Iron
-- Select com validação:
-  - Verde quando acerta
-  - Vermelho quando erra
-
----
-
-## ⚙️ Aba: Administração
-
-Controle do banco local de técnicas.
-
-### Funcionalidades:
-
-- 📤 Exportar técnicas (gera arquivo `.json`)
-- 📥 Importar técnicas (`.json`)
-- ♻ Resetar banco (limpa `localStorage`)
-- Controle total sem backend
-
-- Cadastro
-
-Permite cadastrar novas técnicas manualmente.
-
-### Funcionalidades:
-
-- Inserir:
-  - Nome correto da técnica
-  - Link da imagem
-  - Alternativas erradas
-- Salvar no `localStorage`
-- Listar técnicas cadastradas
-- Excluir técnicas individualmente
-- Mostrar / ocultar lista
-- Sistema de persistência local
-
----
-
-# 💾 Armazenamento de Dados
-
-- Utiliza `localStorage`
-- Pode importar/exportar JSON
-- Não utiliza banco externo
-- Funciona 100% offline após carregado
-
----
-
-# 📱 Design
-
-- Layout Mobile First
-- Navegação tipo aplicativo
-- Sistema de troca de telas via JavaScript
-- Scroll automático ao trocar de aba
-- Interface limpa e focada em celular
-
----
-
-# 🛠 Tecnologias Utilizadas
-
-- HTML5  
-- CSS3  
-- JavaScript (Vanilla JS)  
-- GitHub Pages (hospedagem estática)
-
----
-
-# 📂 Estrutura do Projeto
+```text
+index.html          Interface e navegação
+css/style.css       Layout responsivo e estilos
+js/main.js          Inicialização e troca de telas
+js/utils.js         Funções compartilhadas
+js/jogo.js          Lógica do jogo de técnicas
+js/apostila.js      Carregamento e apresentação da apostila
+js/admin.js         Armazenamento e ferramentas administrativas
+data/tecnicas.json  Catálogo inicial do jogo
+data/apostila.json  Conteúdo por graduação
+assets/images/      Imagens locais publicadas com o site
+```

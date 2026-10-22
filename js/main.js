@@ -3,25 +3,36 @@ let tecnicasEmbaralhadas = [];
 let tecnicaAtualIndex = 0;
 let respostaMontada = [];
 
-document.addEventListener("DOMContentLoaded", function() {
-    carregarTecnicasIniciais();
-    ativarImportacao();
-});
-
 function trocarTela(id) {
-    document.querySelectorAll(".tela").forEach(t => t.classList.add("hidden"));
-    document.getElementById(id).classList.remove("hidden");
-    window.scrollTo(0, 0);
+    const tela = document.getElementById(id);
+    if (!tela || !tela.classList.contains("tela")) return;
+
+    document.querySelectorAll(".tela").forEach(item => item.classList.add("hidden"));
+    tela.classList.remove("hidden");
+
+    document.querySelectorAll(".menuInferior [data-tela]").forEach(botao => {
+        if (botao.dataset.tela === id) botao.setAttribute("aria-current", "page");
+        else botao.removeAttribute("aria-current");
+    });
+    window.scrollTo({ top: 0, behavior: "smooth" });
 }
 
 function toggleLista() {
-    document.getElementById("listaContainer").classList.toggle("hidden");
+    const lista = document.getElementById("listaContainer");
+    const botao = document.querySelector(".toggle-btn");
+    if (!lista || !botao) return;
+    const vaiAbrir = lista.classList.contains("hidden");
+    lista.classList.toggle("hidden", !vaiAbrir);
+    botao.setAttribute("aria-expanded", String(vaiAbrir));
+    botao.textContent = vaiAbrir ? "Ocultar técnicas cadastradas" : "Mostrar técnicas cadastradas";
 }
 
-
-document.addEventListener("DOMContentLoaded", function () {
-    ativarAcordeao();
+document.addEventListener("DOMContentLoaded", () => {
+    document.querySelectorAll(".menuInferior [data-tela]").forEach(botao => {
+        botao.addEventListener("click", () => trocarTela(botao.dataset.tela));
+    });
+    trocarTela("telaInicial");
     ativarImportacao();
-    ativarQuizSignificado();
     carregarTecnicasIniciais();
+    carregarApostila();
 });
