@@ -18,18 +18,20 @@
 
 * { box-sizing: border-box; }
 
-html { min-width: 320px; scroll-behavior: smooth; }
+html { min-width: 0; overflow-x: hidden; scroll-behavior: smooth; }
 
 body {
     min-height: 100vh;
     margin: 0;
     padding-bottom: calc(82px + env(safe-area-inset-bottom));
+    overflow-x: hidden;
     color: var(--ink);
     background: #edf3f5;
     line-height: 1.5;
 }
 
 button, input, textarea { font: inherit; }
+img, iframe { max-width: 100%; }
 button, .botao { -webkit-tap-highlight-color: transparent; }
 button { cursor: pointer; }
 button:focus-visible, a:focus-visible, input:focus-visible, textarea:focus-visible, .botao:focus-visible {
@@ -177,6 +179,9 @@ button:active { transform: translateY(1px); }
 }
 @media (max-width: 620px) {
     .cabecalho { width: calc(100% - 28px); min-height: 64px; }
+    .marca { min-width: 0; }
+    .marca > span { min-width: 0; }
+    .marca small { white-space: nowrap; }
     .credito { display: none; }
     .tela { width: calc(100% - 16px); margin: 6px auto 16px; padding: 20px 16px; border-radius: 19px; }
     .tela-inicial { padding: 0; }
