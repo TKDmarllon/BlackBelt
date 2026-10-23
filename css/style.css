@@ -214,3 +214,34 @@ button:active { transform: translateY(1px); }
 @media (prefers-reduced-motion: reduce) {
     *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
 }
+.credito-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.instagram-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    /* Cor do ícone em estado normal (visível no fundo claro) */
+    color: #102c3a; 
+    background: rgba(16, 44, 58, 0.08); /* Fundo sutil em tom escuro */
+    padding: 6px;
+    border-radius: 50%;
+    transition: background 0.2s, color 0.2s, transform 0.2s;
+    text-decoration: none;
+}
+
+/* Estado ao passar o mouse */
+.instagram-link:hover {
+    background: #E1306C; /* Fundo rosa/vermelho do Instagram */
+    color: #ffffff;      /* Ícone fica branco em cima do fundo colorido */
+    transform: scale(1.1);
+}
+
+.instagram-link svg {
+    width: 18px;
+    height: 18px;
+    fill: currentColor;
+}
